@@ -35,6 +35,14 @@
 	  	  		<artifactId>poi-ooxml-schemas</artifactId>
 	  	  		<groupId>org.apache.poi</groupId>
 	  	  	</exclusion>
+	  	  	<exclusion>
+	  	  		<groupId>com.fasterxml.jackson.core</groupId>
+	  	  		<artifactId>jackson-databind</artifactId>
+	  	  	</exclusion>
+	  	  	<exclusion>
+	  	  		<groupId>com.google.guava</groupId>
+	  	  		<artifactId>guava</artifactId>
+	  	  	</exclusion>
 	  	  </exclusions>
 		</dependency>
 	    <dependency>
@@ -154,6 +162,16 @@
 		<dependency>
 			<groupId>com.idega.block.addon</groupId>
 			<artifactId>com.idega.block.calendar</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.idega.block.addon</groupId>
@@ -212,6 +230,12 @@
 		<dependency>
 			<groupId>com.idega.block.addon</groupId>
 			<artifactId>com.idega.block.oauth2.server</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 	      <groupId>com.idega.block.addon</groupId>
@@ -314,6 +338,14 @@
 				<exclusion>
 					<groupId>org.apache.poi</groupId>
 					<artifactId>poi-ooxml-schemas</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
