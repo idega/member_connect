@@ -278,7 +278,13 @@
     	<dependency>
 			<groupId>com.idega.block.egov</groupId>
 			<artifactId>is.idega.webservice</artifactId>
-		</dependency>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpcore</artifactId>
+				</exclusion>
+			</exclusions>
+    	</dependency>
 		
 		<!-- Solution -->
 		<dependency>
